@@ -1,14 +1,18 @@
-# What's Qemu and What It Can Do
+# What Qemu is and What It Can Do
 
-If you Google `Qemu`, you can find a lot of webpages of it, such as the wikipedia [Qemu](http://en.wikipedia.org/wiki/QEMU), and the official website [wiki.qemu.org](http://wiki.qemu.org/Main_Page), etc. They all have their different explanations about what's Qemu and what it can do. 
+If you Google `Qemu`, you will find webpages such as the wikipedia: [Qemu](http://en.wikipedia.org/wiki/QEMU), or the official website: [wiki.qemu.org](http://wiki.qemu.org/Main_Page), etc., which have their own explanations about what Qemu is and what it can do. 
 
-However, based on my own understanding, I believe one of the most important things that Qemu can achieve is: Qemu essentially **translates** one CPU instruction set to another **on the fly**.
+My own understanding: essentially, Qemu **translates** one CPU instruction set to another **on the fly**.
 
-What's a CPU instruction? It's like an `order` that a CPU can understand and execute. What's a CPU instruction set? It's all instructions that the CPU can understand and execute, like the `language` of a CPU. One particular CPU can only understand one instruction set (*what if a CPU can understand more than one instruction set???*), like the people live in english-speaking area can only understand english, of course assumes that he or she does not know any other foreign language.
+What's a CPU instruction? It's a "command" that CPU can execute, usually as "move value from A to B", or "add values from A and B and store result in A", etc.
 
-Soon you see the problem here, what if an english-speaking person and a chinese-speaking person try to communicate with each other, if they only speak native language? That's exactly the **same issue** for CPU: what if a program already compiled for one particular instruction set and tries to execute on another?
+What's a CPU instruction set? It's all the "commands" that a CPU can execute. 
 
-The simple answer is you can't unless you play some other tricks. You might wonder why you want to do that, however, it seems that a program or application (whatever you call it) can run on anywhere seems to be one of the most-wanted objectives in computer science, at lease in industry. Just like the early slogan `"Write once, run anywhere"`<sup>[1](#slogan)</sup> for Java. Imagine that an ios app can be run on an intel mac directly, or a xbox one or ps4 game can be run on PC directly. 
+A CPU can only understand one instruction set (*what if a CPU can understand more than one instruction set???*), like a person only speaks one language. There exists many [instruction sets](http://en.wikipedia.org/wiki/Comparison_of_instruction_set_architectures), such as x86, arm etc., like there exists many languages as well.
+
+Soon you see the issue, what if two different language-speaking persons try to communicate with each other? Same issue for CPU: what if a program compiles for one particular instruction set, then tries to execute on another?
+
+First you might wonder why you want to do that, however, let a program or application run anywhere seems to be one of the most-wanted goals. Reflected by the early slogan of Java `"Write once, run anywhere"`<sup>[1](#slogan)</sup>. Imagine an ios app can be run on a mac directly, or a xbox one/ps4 game can be run on PC directly. 
 
 *to be continue*:
 
@@ -16,4 +20,5 @@ What does it mean by **translation**?
 
 What does it mean by **on the fly**?
 
+---
 <a name="slogan">1</a>: ["Write once, run anywhere"](http://en.wikipedia.org/wiki/Write_once,_run_anywhere)
